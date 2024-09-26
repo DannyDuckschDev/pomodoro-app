@@ -3,7 +3,7 @@
 This is a simple **Pomodoro Timer** built with HTML, CSS, and JavaScript. The application allows users to manage their work sessions using the Pomodoro technique, which consists of 25-minute work intervals followed by 5-minute breaks. Additionally, I have added a custom **reset button** and a **pause button** to further enhance the functionality of the app.
 
 ## Screenshot of the Pomodoro App
-![Pomodoro App Screenshot](images/pomorodo-app_screenshot.png)
+![Pomodoro App Screenshot](images/pomodoro-app_screenshot.png)
 
 ---
 
