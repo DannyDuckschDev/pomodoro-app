@@ -1,0 +1,151 @@
+html{
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 20px;
+    letter-spacing: 0.8px;
+    min-height: 100vh;
+    color: #d8e9ef;
+    background-image: linear-gradient(-20deg, #025159 0%, #733b36 100%);
+    background-size: cover;
+}
+
+h1 {
+    margin: 0 auto 10px auto;
+    color: #d8e9ef;
+}
+
+p {
+    margin: 0;
+}
+
+.app-message {
+    height: 20px;
+    margin: 10px auto 20px auto;
+}
+
+.app-container {
+    width: 250px;
+    height: 520px;
+    margin: 40px auto;
+    text-align: center;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+/*The .app-circle is where the remaining time and start button will be. It is made of two semi-circles for the left-side and right-side. */
+.app-circle{
+    position: relative;
+    margin: 0 auto;
+    width: 200px;
+    height: 200px;
+}
+/* The .circle-shape is set so that the rendered circle cannot be clicked.*/
+.circle-shape{
+    pointer-events: none;
+}
+
+.semi-circle {
+    position: absolute;
+    width: 100px;
+    height: 200px;
+    box-sizing: border-box;
+    border: solid 6px;
+}
+
+.left-side {
+    top: 0; /* The top edge of the element is aligned with the top edge of its positioned ancestor */
+    left: 0; /* The left edge of the element is aligned with the left edge of its positioned ancestor */
+    transform-origin: right center; /* The point around which the element will rotate is the center of its right edge */
+    transform: rotate(0deg); /* The element is rotated by 0 degrees, meaning no rotation */
+    border-top-left-radius: 100px; /* The top-left corner of the element is rounded with a radius of 100 pixels */
+    border-bottom-left-radius: 100px; /* The bottom-left corner of the element is rounded with a radius of 100 pixels */
+    border-right: none; /* No border is applied to the right side of the element */
+    z-index: 1; /* The element is placed above other elements with a lower z-index */
+}
+
+.right-side {
+    top: 0; /* The top edge of the element is aligned with the top edge of its positioned ancestor */
+    left: 100px; /* The left edge of the element is 100 pixels from the left edge of its positioned ancestor */
+    transform-origin: left center; /* The point around which the element will rotate is the center of its left edge */
+    transform: rotate(0deg); /* The element is rotated by 0 degrees, meaning no rotation */
+    border-top-right-radius: 100px; /* The top-right corner of the element is rounded with a radius of 100 pixels */
+    border-bottom-right-radius: 100px; /* The bottom-right corner of the element is rounded with a radius of 100 pixels */
+    border-left: none; /* No border is applied to the left side of the element */
+}
+
+.circle{
+    border-color: #bf5239;
+}
+
+.circle-mask {
+    border-color: #e85a71;
+}
+
+.app-counter-box {
+    font-family: "Droid Sans Mono", monospace;
+    font-size: 250%;
+    position: relative;
+    top: 50px;
+    color: #d8e9ef;
+}
+
+
+.status-message{
+    margin: 2rem auto 0rem auto;
+    color: #2196F3;
+}
+
+button {
+    position: relative;
+    top: 50px;
+    font-size: 80%;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border: none;
+    background: none;
+    outline: none;
+    color: #d8e9ef;
+    padding: 0.5rem;
+    border-radius: 25px;
+
+}
+
+button:hover{
+    color: #90c0d1;
+}
+
+.btn-start{
+    margin-top: 0.5rem;
+}
+
+.btn-start:hover{
+    box-shadow: 7px 8px 1px 0px dimgrey;
+}
+
+.btn-pause,
+.btn-reset {
+    box-shadow: 7px 8px 1px 0px dimgrey;
+}
+
+.btn-pause{
+    background-color: #2196F3;
+    margin-bottom: 0.75rem;
+}
+
+.btn-reset{
+    background-color: #FF9800;
+    margin-top: 0.75rem;
+}
+
+.app-button-group{
+    display: flex;
+    flex-direction: column;
+}
+
+footer {
+    font-size: 0.6em;
+    text-align: right;
+    padding-right: 1.2rem;
+}
+footer a {
+    color: lightcoral;
+}
